@@ -1,0 +1,22 @@
+license: "accept"
+
+persistence:
+  useDynamicProvisioning: false
+
+logPVC:
+  enabled: true
+
+qmPVC:
+  enabled: true
+
+queueManager:
+  dev:
+    secret:
+      name: "mq-secret"
+      adminPasswordKey: adminPassword
+      appPasswordKey:
+
+security:
+  context:
+    fsGroup: 65534
+    supplementalGroups: []
